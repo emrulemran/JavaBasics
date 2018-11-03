@@ -1,0 +1,13 @@
+public class StringtoCharArray {
+
+	public static void main(String[] args) {
+
+		String text = "we are happy!";
+		char[] chArr = text.toCharArray();
+		for (char c : chArr) {
+			System.out.println(c);
+		}
+
+	}
+
+}
