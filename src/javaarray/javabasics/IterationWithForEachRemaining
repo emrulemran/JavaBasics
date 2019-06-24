@@ -1,0 +1,25 @@
+package collectionsdemo;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class IterationWithForEachRemaining {
+    public static void main(String[] args) {
+        List<String> nameList = new ArrayList<String>();
+        nameList.add("Tisdale");
+        nameList.add("Jovian");
+        nameList.add("Charlie");
+        nameList.add("Charlie");
+        nameList.add("Dennis");
+        nameList.add("Martha");
+        nameList.add("Ian");
+        nameList.add("Colbert");
+        nameList.add("Tijuana");
+        nameList.add("Wrangler");
+        nameList.add("Zeck");
+        nameList.add("Yvan");
+        Iterator<String> nameIterator = nameList.iterator();
+        nameIterator.forEachRemaining(System.out::println);
+    }
+}
