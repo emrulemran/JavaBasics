@@ -30,12 +30,11 @@ public class DequeDemo {
 
 		// Peek returns the head, without deleting
 		// it from the dequeue
-		System.out.println("Peek " + myDeque.peek());
-		System.out.println("After peek: " + myDeque);
+		System.out.println("The peek is: " + myDeque.peek());
+		System.out.println("After the peek : " + myDeque);
 
-		// Pop returns the head, and removes it from
-		// the deque
-		System.out.println("Pop " + myDeque.pop());
+		// Pop returns the head, and removes it from the deque
+		System.out.println("Pop :" + myDeque.pop());
 		System.out.println("After pop: " + myDeque);
 
 		// We can check if a specific element exists
@@ -49,3 +48,30 @@ public class DequeDemo {
 
 	}
 }
+
+
+
+Output:
+[lexington, richmond, boston, new york, miami, wyoming, hartford]
+
+	lexington
+	richmond
+	boston
+	new york
+	miami
+	wyoming
+	hartford
+Reverse Iterator
+	hartford
+	wyoming
+	miami
+	new york
+	boston
+	richmond
+	lexington
+The peek is: lexington
+After the peek : [lexington, richmond, boston, new york, miami, wyoming, hartford]
+Pop :lexington
+After pop: [richmond, boston, new york, miami, wyoming, hartford]
+Contains Boston? true
+Deque after removing first and last: [boston, new york, miami, wyoming]
