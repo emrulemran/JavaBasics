@@ -17,6 +17,9 @@ public class StackDemo {
 		stk.add("Tapir");
 		System.out.println(stk);
 		stk.pop();
+		
+		Collections.sort(stk, Collections.reverseOrder());
+		
 		Iterator<String> itr = stk.iterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.next());
