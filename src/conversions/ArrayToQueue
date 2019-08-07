@@ -1,0 +1,25 @@
+package conv;
+
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class ArrayToQueue {
+
+	public static void main(String[] args) {
+
+		// an array with five elements:
+		String nums[] = { "one", "two", "three", "four", "five" };
+
+		// an empty Queue:
+		Queue<String> queue = new LinkedList<>();
+
+		// adding all elements to a queue from an array
+		Collections.addAll(queue, nums);
+		System.out.println("The queue is: "+queue);
+	}
+}
+
+
+Output:
+The queue is: [one, two, three, four, five]
