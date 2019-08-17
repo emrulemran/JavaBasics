@@ -1,0 +1,31 @@
+package mutlithread;
+
+public class ThreadDemo1 extends Thread {
+
+public static void main(String[] args) {
+ThreadDemo1 td1 = new ThreadDemo1();
+td1.run();
+
+
+
+}
+
+public void run() {
+
+Thread t = new Thread();
+try {
+t.sleep(10000);
+} catch (InterruptedException e) {
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+t.run();
+System.out.println("A thread is running . . .");
+
+System.out.println(t.getId());
+t.setPriority(1);
+System.out.println(t.getPriority());
+
+}
+
+}
