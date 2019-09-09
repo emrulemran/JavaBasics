@@ -1,0 +1,25 @@
+// jxl.jar file needs to be downloaded and set to build path
+// can be done the same with apache poi jar or poi-ooxml.jar
+
+
+package exceldemo;
+
+import java.io.File;
+import jxl.Cell;
+import jxl.Sheet;
+import jxl.Workbook;
+
+public class ReadExcelFile {
+	public static void main(String[] args) throws Exception {
+		File src = new File("/Users/mypc/Desktop/ExcelJava.xls");
+		Workbook wb = Workbook.getWorkbook(src);
+		Sheet sh1 = wb.getSheet(0);
+		Cell c1 = sh1.getCell(0, 0);
+		Cell c2 = sh1.getCell(1, 1);
+		String data1 = c1.getContents();
+		String data2 = c2.getContents();
+
+		System.out.println(data1 + " : " + data2);
+
+	}
+}
