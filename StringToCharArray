@@ -1,5 +1,5 @@
 public class StringtoCharArray {
-
+// test
 	public static void main(String[] args) {
 
 		String text = "we are happy boys - always and ever!";
@@ -9,5 +9,5 @@ public class StringtoCharArray {
 		}
 
 	}
-
+// another test
 }
