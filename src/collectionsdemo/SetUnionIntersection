@@ -1,0 +1,54 @@
+package demo;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetUnionIntersection {
+
+	public static void main(String[] args) {
+		Set s1 = new HashSet();
+		s1.add(1);
+		s1.add(3);
+		s1.add(5);
+		s1.add(7);
+		s1.add(9);
+
+		Set s2 = new HashSet();
+		s2.add(2);
+		s2.add(4);
+		s2.add(6);
+		s2.add(8);
+		s2.add(10);
+
+		s1.addAll(s2); // Union - joins s2 to s1
+
+		System.out.println("Prints all values from both the sets : " + s1);
+
+		Set set1 = new HashSet();
+		set1.add(11);
+		set1.add(13);
+		set1.add(15);
+		set1.add(17);
+		set1.add(19);
+		set1.add(22);
+		set1.add(29);
+
+		Set set2 = new HashSet();
+
+		set2.add(22);
+		set2.add(23);
+		set2.add(25);
+		set2.add(27);
+		set2.add(29);
+
+		set1.retainAll(set2); // Intersection
+
+		System.out.println("Prints values common to both the sets : " + set1);
+
+	}
+
+}
+
+Output:
+Prints all values from both the sets : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Prints values common to both the sets : [22, 29]
