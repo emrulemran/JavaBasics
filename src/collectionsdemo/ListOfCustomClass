@@ -1,0 +1,47 @@
+package listdemo;
+
+public class Student {
+
+	int sId;
+	String sName, courseName;
+
+	Student(int id, String name, String course) {
+		this.sId = id;
+		this.sName = name;
+		this.courseName = course;
+
+	}
+
+}
+
+
+package listdemo;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class StudentList {
+
+	public static void main(String[] args) {
+		Student s1 = new Student(1, "abdul", "java");
+		Student s2 = new Student(2, "hassan", "scala");
+		Student s3 = new Student(3, "salam", "python");
+		Student s4 = new Student(4, "kalam", "visual basic");
+		Student s5 = new Student(5, "shaheed", "dotNet");
+
+		List<Student> sList = new LinkedList<Student>();
+
+		sList.add(s1);
+		sList.add(s2);
+		sList.add(s3);
+		sList.add(s4);
+		sList.add(s5);
+
+		for (Student s : sList) {
+			System.out.println(s.sId + "	" + s.sName + "		" + s.courseName);
+		}
+
+	}
+
+}
+
