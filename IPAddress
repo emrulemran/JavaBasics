@@ -1,7 +1,8 @@
 class IPAddress {
 	public static void main(String args[]) throws Exception {
 		InetAddress ip = InetAddress.getLocalHost();
-                // checking git - adding new line	
+                // checking git - adding new line
+		//  adding another line			
 
 
 		System.out.println(ip);
