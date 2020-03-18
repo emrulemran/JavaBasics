@@ -4,7 +4,7 @@ class IPAddress {
                 // checking git - adding new line
 		//  adding another line			
 
-
+		// checking Git to remote repo
 		System.out.println(ip);
 	}
 }
