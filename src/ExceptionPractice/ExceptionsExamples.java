@@ -1,4 +1,4 @@
-package jdbcpak;
+package testpack;
 
 import java.io.File;
 import java.sql.Connection;
@@ -24,7 +24,7 @@ public class ExceptionsExamples {
 		System.out.println(city.charAt(13));
 
 		// #3 ArrayIndexOutOfBoundsException:
-		String[] names = { "Joha", "Raman", "Aziz", "Anne", "Polash" };
+		String[] names = { "Jonh", "Jane", "Jinna", "Jenny", "Joanna" };
 		System.out.println(names[5]);
 
 		// #4 NullPointerException:
@@ -37,10 +37,10 @@ public class ExceptionsExamples {
 		System.out.println(convertedNumber);
 
 		// #6 and 7 ClassNotFoundException and SQLException:
-		Class.forName("com.mysql.cj.jdbc.Driver");					// ClassNotFoundException 
+		Class.forName("com.mysql.cj.jdbc.Driver");			            // ClassNotFoundException 
 		Connection conn = DriverManager.getConnection("abasfdfd", "root", "4444");  // SQLException
 		Statement st = conn.createStatement();
-		ResultSet rset = st.executeQuery("we are happy learners");
+		ResultSet rset = st.executeQuery("we are happy learners");                   // SQLException
 
 		// #8 InterruptedException:
 		Thread.sleep(5000);
