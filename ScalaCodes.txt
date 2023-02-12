@@ -1,0 +1,20 @@
+package day1
+
+object SumOfSquares {
+  def main(args: Array[String]): Unit = {
+    println("Please enter a number: ")
+    val input = scala.io.StdIn.readInt()
+
+    var numRange = 1 to input
+
+    println(numRange)
+
+    var sumOfSq: Long = 0
+    for (n <- numRange) {
+
+      sumOfSq += n * n
+    }
+
+    println("Sum of Squares is: " + sumOfSq)
+  }
+}
